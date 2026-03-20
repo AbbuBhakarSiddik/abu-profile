@@ -4,374 +4,505 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- =====BOX ICONS===== -->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-  <title>ABU-profile</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Abbu Bhakar Siddik — Full Stack Developer</title>
 </head>
 
 <body>
-  <!--===== HEADER =====-->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav__logo">Abbu Bhakar Siddik</a>
-      </div>
 
+  <!-- HEADER -->
+  <header class="l-header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">Abu Bhakar Siddik</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </div>
-
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
+      <div class="nav__toggle" id="nav-toggle"><i class='bx bx-menu'></i></div>
     </nav>
   </header>
 
   <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid" id="home">
-      <div class="home__data">
-        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abbu Bhakar Siddik</span><br> Java Full
-          Stack Developer</h1>
 
-        <a href="#projects" class="button">Projects</a>
-      </div>
-
-      <div class="home__social">
-        <a href="https://www.linkedin.com/in/abbu-bhakar-siddik-42466a3a7/" class="home__social-icon"><i
-            class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/AbbuBhakarSiddik?tab=repositories" class="home__social-icon"><i
-            class='bx bxl-github'></i></a>
-      </div>
-
-      <div class="home__img">
-        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-          </mask>
-          <g mask="url(#mask0)">
-            <path
-              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-            <image class="home__blob-img" x="50" y="60" href="assets/img/p1.png" />
-          </g>
-        </svg>
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home__bg-dot home__bg-dot--1"></div>
+      <div class="home__bg-dot home__bg-dot--2"></div>
+      <div class="home__inner">
+        <div class="home__data">
+          <div class="home__tag">
+            <span class="home__tag-dot"></span>
+            Available for Internships &amp; Collaborations
+          </div>
+          <h1 class="home__title">
+            Hi, I'm<br>
+            <span class="home__title-color">Abbu Bhakar Siddik</span><br>
+            Full Stack Developer
+          </h1>
+          <p class="home__description">
+            Builder-mindset developer crafting scalable, real-world web applications using MERN stack. Passionate about
+            AI-powered tools and clean, efficient solutions.
+          </p>
+          <div class="home__actions">
+            <a href="#projects" class="button"><i class='bx bx-code-block'></i> View Projects</a>
+            <a href="assets/resume/abu-resume.pdf" class="button button--outline" download><i
+                class='bx bx-download'></i> Download Resume</a>
+          </div>
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/abbu-bhakar-siddik-42466a3a7/" class="home__social-icon"
+              target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/AbbuBhakarSiddik?tab=repositories" class="home__social-icon" target="_blank"><i
+                class='bx bxl-github'></i></a>
+            <a href="mailto:abuakyt@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+          </div>
+          <div class="home__stats">
+            <div>
+              <div class="home__stat-num">3+</div>
+              <div class="home__stat-label">Live Projects</div>
+            </div>
+            <div>
+              <div class="home__stat-num">MERN</div>
+              <div class="home__stat-label">Stack Expert</div>
+            </div>
+            <div>
+              <div class="home__stat-num">AI</div>
+              <div class="home__stat-label">Integrated Apps</div>
+            </div>
+          </div>
+        </div>
+        <div class="home__visual">
+          <div class="home__blob-wrap">
+            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                <image class="home__blob-img" x="50" y="60" href="assets/img/p1.png" />
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--===== ABOUT =====-->
-    <section class="about section " id="about">
-      <h2 class="section-title">About</h2>
-
-      <div class="about__container bd-grid">
-        <div class="about__img">
-          <img src="assets/img/p2.png" alt="">
-        </div>
-
-        <div>
-          <h2 class="about__subtitle">I'am Abbu Bhakar Siddik</h2>
-          <p class="about__text">"I’m a builder-mindset developer with a strong focus on creating practical, real-world
-            web applications.
-            I enjoy working quietly and deeply on problems, breaking them down into clean, efficient solutions.
-            Currently,
-            I’m strengthening my full-stack JavaScript
-            skills and preparing to expand into software and mobile application development."</p>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="bd-grid">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A little about who I am and what drives me</p>
+        <div class="about__container">
+          <div class="about__img-wrap">
+            <img src="assets/img/p2.png" alt="Abbu Bhakar Siddik">
+          </div>
+          <div>
+            <span class="about__tag">Builder Mindset Developer</span>
+            <h2 class="about__title">Turning ideas into real, working products</h2>
+            <p class="about__text">
+              I'm a full stack developer who discovered my passion for computers during my Diploma in CSE — and never
+              looked back. What started as curiosity grew into a deep love for building things that actually work and
+              solve real problems.
+            </p>
+            <p class="about__text">
+              I work quietly and deeply — breaking down complex problems into clean, efficient solutions. Strong English
+              communication skills combined with hands-on technical ability means I can build it and explain it clearly.
+              Currently pursuing BE in CSE while building AI-integrated platforms, expanding into mobile development,
+              and sharpening my skills every day.
+            </p>
+            <div class="about__highlights">
+              <span class="about__highlight-chip">🔨 Builder Mindset</span>
+              <span class="about__highlight-chip">💬 Strong Communicator</span>
+              <span class="about__highlight-chip">🤖 Prompt Engineer</span>
+              <span class="about__highlight-chip">⚡ Fast Learner</span>
+              <span class="about__highlight-chip">🚀 Self-Driven</span>
+              <span class="about__highlight-chip">📱 Mobile Dev (Learning)</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!--===== SKILLS =====-->
+    <!-- SKILLS -->
     <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
+      <div class="bd-grid">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologies I work with to build full stack applications</p>
+        <div class="skills__container">
 
-      <div class="skills__container bd-grid">
-        <div>
-          <h2 class="skills__subtitle">Professional Skills</h2>
-          <p class="skills__text">Experienced in developing responsive and scalable web applications
-            using modern full-stack technologies, with a strong focus on clean UI,
-            performance, and problem-solving.</p>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class='bx bxl-react skills__icon'></i>
-              <span class="skills__name">React</span>
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">React.js</div>
+              <ul class="skill__popup-points">
+                <li>Built multiple SPAs with component-based architecture</li>
+                <li>React Hooks — useState, useEffect, useContext</li>
+                <li>React Router for client-side navigation</li>
+                <li>Used in NextPath AI, AOX Music, Crypto Wallet</li>
+              </ul>
+              <span class="skill__popup-tag">Frontend</span>
             </div>
-            <div class="skills__bar skills__html">
-
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bxl-react'></i></div>
+              <div>
+                <div class="skill__name">React.js</div>
+                <div class="skill__level">Frontend Development</div>
+              </div>
             </div>
-            <div>
-              <span class="skills__percentage">80%</span>
-            </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class='bx bxl-javascript skills__icon'></i>
-              <span class="skills__name">JavaScript</span>
-            </div>
-            <div class="skills__bar skills__css">
 
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">JavaScript (ES6+)</div>
+              <ul class="skill__popup-points">
+                <li>Async/Await, Promises, Fetch API</li>
+                <li>DOM manipulation and event handling</li>
+                <li>Array &amp; object methods, destructuring, spread</li>
+                <li>Core language behind all my full stack projects</li>
+              </ul>
+              <span class="skill__popup-tag">Core Language</span>
             </div>
-            <div>
-              <span class="skills__percentage">70%</span>
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bxl-javascript'></i></div>
+              <div>
+                <div class="skill__name">JavaScript</div>
+                <div class="skill__level">Core Language</div>
+              </div>
             </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class='bx bxl-nodejs skills__icon'></i>
-              <span class="skills__name">NodeJS/Express</span>
-            </div>
-            <div class="skills__bar skills__js">
 
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">Node.js / Express</div>
+              <ul class="skill__popup-points">
+                <li>RESTful API design and development</li>
+                <li>Middleware, routing, and error handling</li>
+                <li>JWT authentication and protected routes</li>
+                <li>Backend for NextPath AI and AOX Music</li>
+              </ul>
+              <span class="skill__popup-tag">Backend</span>
             </div>
-            <div>
-              <span class="skills__percentage">60%</span>
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bxl-nodejs'></i></div>
+              <div>
+                <div class="skill__name">Node.js / Express</div>
+                <div class="skill__level">Backend Development</div>
+              </div>
             </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class='bx bx-brain skills__icon'></i>
-              <span class="skills__name">Promt Engineering</span>
-            </div>
-            <div class="skills__bar skills__ux">
 
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">MongoDB</div>
+              <ul class="skill__popup-points">
+                <li>Schema design with Mongoose ODM</li>
+                <li>CRUD operations and aggregation pipelines</li>
+                <li>Data modeling for real-world applications</li>
+                <li>Primary database across all MERN projects</li>
+              </ul>
+              <span class="skill__popup-tag">Database</span>
             </div>
-            <div>
-              <span class="skills__percentage">85%</span>
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bx-data'></i></div>
+              <div>
+                <div class="skill__name">MongoDB</div>
+                <div class="skill__level">Database</div>
+              </div>
             </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
           </div>
-        </div>
 
-        <div>
-          <img src="assets/img/work5.jpg" alt="" class="skills__img">
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">Prompt Engineering</div>
+              <ul class="skill__popup-points">
+                <li>Designing effective prompts for Claude &amp; GPT models</li>
+                <li>AI feature integration into real web applications</li>
+                <li>Resume analysis &amp; career AI in NextPath AI</li>
+                <li>Building AI-powered tools using API integrations</li>
+              </ul>
+              <span class="skill__popup-tag">AI / LLM</span>
+            </div>
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bx-brain'></i></div>
+              <div>
+                <div class="skill__name">Prompt Engineering</div>
+                <div class="skill__level">AI / LLM Integration</div>
+              </div>
+            </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+          </div>
+
+          <div class="skill__card">
+            <div class="skill__popup">
+              <div class="skill__popup-title">Git &amp; GitHub</div>
+              <ul class="skill__popup-points">
+                <li>Version control across all projects</li>
+                <li>Branching, merging, and pull requests</li>
+                <li>Deploying projects via GitHub + Vercel</li>
+                <li>Maintaining clean commit history</li>
+              </ul>
+              <span class="skill__popup-tag">Version Control</span>
+            </div>
+            <div class="skill__header">
+              <div class="skill__icon-wrap"><i class='bx bxl-git'></i></div>
+              <div>
+                <div class="skill__name">Git &amp; GitHub</div>
+                <div class="skill__level">Version Control</div>
+              </div>
+            </div>
+            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!--===== PROJECTS =====-->
+    <!-- PROJECTS -->
     <section class="projects section" id="projects">
-      <h2 class="section-title">Projects</h2>
+      <div class="bd-grid">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Real-world applications built and shipped</p>
+        <div class="projects__container">
 
-      <div class="projects__container bd-grid">
+          <div class="project__card">
+            <span class="project__badge"><i class='bx bx-bot'></i> AI Powered</span>
+            <h3>NextPath AI</h3>
+            <p>A student-focused full-stack platform with AI-driven tools including resume analysis, career path
+              recommendations, and developer resources. Built with scalable MERN architecture.</p>
+            <div class="project__tech">React • Node.js • MongoDB • AI API</div>
+            <a href="https://nextpath-v2.vercel.app/home" class="project__link" target="_blank">View Live <i
+                class='bx bx-right-arrow-alt'></i></a>
+          </div>
 
-        <div class="project__card">
-          <h3>NextPath AI</h3>
-          <p>
-            A student-focused full-stack platform providing useful
-            academic and tech tools including resume analysis,
-            career assistance, and developer resources.
-          </p>
-          <span class="project__tech">
-            React • Node.js • MongoDB
-          </span>
-          <a href="https://nextpath-v2.vercel.app/home" class="project__link">Live Link <i
-              class='bx bx-link-external'></i></a>
-        </div>
+          <div class="project__card">
+            <span class="project__badge"><i class='bx bx-bitcoin'></i> Blockchain</span>
+            <h3>Crypto Wallet &amp; Explorer</h3>
+            <p>A blockchain-based crypto wallet enabling users to store, send and receive cryptocurrencies. Includes a
+              real-time transaction explorer with Web3 data visualization.</p>
+            <div class="project__tech">React • Web3.js • Blockchain</div>
+            <a href="https://crypto-wallet-sigma-three.vercel.app/" class="project__link" target="_blank">View Live <i
+                class='bx bx-right-arrow-alt'></i></a>
+          </div>
 
-        <div class="project__card">
-          <h3>Developer Portfolio</h3>
-          <p>
-            A college exhibition project built to help students
-            showcase their skills and market themselves as developers.
-            Awarded 2nd Prize in project exhibition.
-          </p>
-          <span class="project__tech">
-            React • Web Technologies
-          </span>
-          <a href="abu-profile.vercel.app" class="project__link">Live Link <i class='bx bx-link-external'></i></a>
-        </div>
+          <div class="project__card">
+            <span class="project__badge"><i class='bx bx-music'></i> Full Stack</span>
+            <h3>AOX Music</h3>
+            <p>A dynamic music streaming app with seamless playback, user-curated playlists, and a music library
+              manager. Node.js backend handles efficient media management.</p>
+            <div class="project__tech">React • Node.js • Express</div>
+            <a href="https://aox-music.vercel.app/" class="project__link" target="_blank">View Live <i
+                class='bx bx-right-arrow-alt'></i></a>
+          </div>
 
-        <div class="project__card">
-          <h3>Crypto Wallet & Transaction Explorer</h3>
-          <p>
-            A blockchain-based crypto wallet that allows users to store,
-            send, and receive cryptocurrencies. It also includes a transaction
-            explorer that allows users to view their transaction history.
-          </p>
-          <span class="project__tech">
-            React • Web Technologies
-          </span>
-          <a href="https://crypto-wallet-sigma-three.vercel.app/" class="project__link">Live Link <i
-              class='bx bx-link-external'></i></a>
-        </div>
-
-        <div class="project__card">
-          <h3>AOX Music</h3>
-          <p>
-            A music player website with features like playing songs,
-            creating playlists, and managing music library.
-          </p>
-          <span class="project__tech">
-            React • NodeJS
-          </span>
-          <a href="https://aox-music.vercel.app/" class="project__link">Live Link <i
-              class='bx bx-link-external'></i></a>
         </div>
       </div>
     </section>
-    <!--===== EXPERIENCE =====-->
+
+    <!-- EXPERIENCE -->
     <section class="experience section" id="experience">
-      <h2 class="section-title">Experience</h2>
+      <div class="bd-grid">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Projects I've owned and led end-to-end</p>
+        <div class="experience__container">
 
-      <div class="experience__container bd-grid">
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>NextPath AI — Full Stack Developer</h3>
+              <span class="experience__date">2025 – Present</span>
+            </div>
+            <p>Developed a comprehensive student utility platform using the MERN stack. Integrated AI features like
+              resume analysis and career path recommendations, with a focus on scalable architecture and user-centric
+              design.</p>
+          </div>
 
-        <div class="experience__card">
-          <h3>NextPath AI — Full Stack Developer</h3>
-          <span>2025 – Present</span>
-          <p>
-            Developed a comprehensive student utility platform using the MERN stack.
-            Implemented AI-driven features like resume analysis and career path recommendations,
-            focusing on scalable architecture and user-centric design.
-          </p>
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>Crypto Wallet &amp; Explorer — Blockchain Developer</h3>
+              <span class="experience__date">2025</span>
+            </div>
+            <p>Built a secure blockchain interface for managing digital assets. Implemented a real-time transaction
+              explorer using Web3 technologies for on-chain data transparency and visualization.</p>
+          </div>
+
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>AOX Music — Full Stack Developer</h3>
+              <span class="experience__date">2025</span>
+            </div>
+            <p>Created a dynamic music streaming application with seamless playback and user-curated playlists.
+              Integrated a Node.js backend for efficient media management with a responsive React frontend.</p>
+          </div>
+
         </div>
-
-        <div class="experience__card">
-          <h3>Developer Portfolio Platform — Lead Developer</h3>
-          <span>2024</span>
-          <p>
-            Conceptualized and built a portfolio hosting platform for college students.
-            Awarded 2nd Prize in the project exhibition for its practical utility in helping students
-            market their skills effectively.
-          </p>
-        </div>
-
-        <div class="experience__card">
-          <h3>Crypto Wallet & Explorer — Blockchain Developer</h3>
-          <span>2025</span>
-          <p>
-            Developed a secure blockchain interface allowing users to manage digital assets.
-            Built a real-time transaction explorer using Web3 technologies to provide transparency
-            and data visualization for on-chain activities.
-          </p>
-        </div>
-
-        <div class="experience__card">
-          <h3>AOX Music — Full Stack Developer</h3>
-          <span>2025</span>
-          <p>
-            Created a dynamic music streaming application with a focus on seamless playback and
-            user-curated playlists. Integrated Node.js backend for efficient media management
-            and a responsive React frontend.
-          </p>
-        </div>
-
-
       </div>
     </section>
-    <!--===== EDUCATION =====-->
+
+    <!-- EDUCATION -->
     <section class="education section" id="education">
-      <h2 class="section-title">Education</h2>
+      <div class="bd-grid">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic background in Computer Science</p>
+        <div class="education__container">
 
-      <div class="education__container bd-grid">
-        <div class="education__card">
-          <h3>Diploma in Computer Science</h3>
-          <span>H.M.S Polytechnic, Tumkur</span>
-          <p>2021 – 2024</p>
-          <p>
-            Completed diploma with a focus on software development,
-            data structures, and web technologies.
-          </p>
+          <div class="education__card">
+            <div class="education__icon">🎓</div>
+            <h3>Diploma in Computer Science</h3>
+            <span>H.M.S Polytechnic, Tumkur</span>
+            <div class="education__year">2021 – 2024</div>
+            <p>Focused on software development, data structures, and web
+              technologies — where the passion for building first started.</p>
+          </div>
+
+          <div class="education__card">
+            <div class="education__icon">🏛️</div>
+            <h3>Bachelor of Engineering — Computer Science</h3>
+            <span>Shridevi Institute of Engineering and Technology</span>
+            <div class="education__year">2024 – Present</div>
+            <p>Currently pursuing BE in CSE (Lateral Entry). Focused on full stack development, real-world project
+              building, and expanding into AI-integrated applications.</p>
+          </div>
+
         </div>
-        <div class="education__card">
-          <h3>Bachelor of Engineering in Computer Science</h3>
-          <span>Shridevi Institute of Engineering and Technology</span>
-          <p>2024 – Present</p>
-          <p>
-            Currently pursuing Computer Science Engineering with
-            focus on full-stack development and real-world project building.
-          </p>
-        </div>
-
-      </div>
-    </section>
-    <!--===== RESUME =====-->
-    <section class="resume section">
-      <h2 class="section-title">Resume</h2>
-
-      <div class="resume__container bd-grid">
-        <p>
-          Download my resume for detailed information about my
-          skills, projects, and experience.
-        </p>
-
-        <a href="assets/resume/abu-resume.pdf" class="button" download>
-          Download Resume
-        </a>
       </div>
     </section>
 
-    <!--===== CONTACT =====-->
+    <!-- RESUME -->
+    <section class="resume">
+      <div class="resume__inner">
+        <h2 class="resume__title">Want the full picture?</h2>
+        <p class="resume__text">Download my resume for a detailed view of my skills, projects, and experience.</p>
+        <a href="assets/resume/abu-resume.pdf" class="button" download><i class='bx bx-download'></i> Download
+          Resume</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
-
-      <div class="contact__container bd-grid">
-
-        <div class="contact__card">
-          <h3>Let’s Connect</h3>
-          <p>
-            I’m open to internship opportunities, collaborations,
-            and exciting development projects.
-          </p>
-
-          <p class="contact__email">
-            📧 abuakyt@gmail.com
-          </p>
-
-          <a href="mailto:abuakyt@gmail.com" class="button">
-            Send Email
-          </a>
+      <div class="bd-grid">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open to internships, collaborations, and exciting projects</p>
+        <div class="contact__container">
+          <div>
+            <h3 class="contact__info-title">Got an opportunity or idea? Let's talk.</h3>
+            <p class="contact__info-text">I'm always open to hearing about interesting projects, internship roles, or
+              collaboration ideas. Drop a message and I'll get back to you.</p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <div class="contact__detail-icon"><i class='bx bx-envelope'></i></div>
+                <div>
+                  <div class="contact__detail-label">Email</div>
+                  <div class="contact__detail-value">abuakyt@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon"><i class='bx bxl-linkedin'></i></div>
+                <div>
+                  <div class="contact__detail-label">LinkedIn</div>
+                  <div class="contact__detail-value">Abbu Bhakar Siddik</div>
+                </div>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon"><i class='bx bxl-github'></i></div>
+                <div>
+                  <div class="contact__detail-label">GitHub</div>
+                  <div class="contact__detail-value">AbbuBhakarSiddik</div>
+                </div>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon"><i class='bx bx-map'></i></div>
+                <div>
+                  <div class="contact__detail-label">Location</div>
+                  <div class="contact__detail-value">Karnataka, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="contact__card-icon"><i class='bx bx-send'></i></div>
+            <h3>Send me a message</h3>
+            <p>I'm open to internship opportunities, collaborations, and exciting development projects. Let's build
+              something great together.</p>
+            <span class="contact__email">📧 abuakyt@gmail.com</span>
+            <a href="mailto:abuakyt@gmail.com" class="button" style="width:100%;justify-content:center;">Send Email <i
+                class='bx bx-right-arrow-alt'></i></a>
+          </div>
         </div>
-
       </div>
     </section>
+
   </main>
 
-  <!--===== FOOTER =====-->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__container bd-grid">
-
+    <div class="footer__container">
       <div>
         <h2 class="footer__title">Abbu Bhakar Siddik</h2>
-        <p class="footer__subtitle">
-          Java Full Stack Developer
-        </p>
+        <p class="footer__subtitle">Full Stack Developer · MERN · AI Integration</p>
       </div>
-
       <div class="footer__social">
-        <a href="https://linkedin.com" target="_blank">
-          <i class='bx bxl-linkedin'></i>
-        </a>
-        <a href="https://github.com" target="_blank">
-          <i class='bx bxl-github'></i>
-        </a>
-        <a href="mailto:abuakyt@gmail.com">
-          <i class='bx bx-envelope'></i>
-        </a>
+        <a href="https://www.linkedin.com/in/abbu-bhakar-siddik-42466a3a7/" target="_blank"><i
+            class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/AbbuBhakarSiddik?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="mailto:abuakyt@gmail.com"><i class='bx bx-envelope'></i></a>
       </div>
-
     </div>
-
-    <p class="footer__copy">
-      © 2026 Abbu Bhakar Siddik . All rights reserved
-    </p>
+    <p class="footer__copy">© 2026 Abbu Bhakar Siddik. All rights reserved.</p>
   </footer>
 
-
-  <!--===== SCROLL REVEAL =====-->
   <script src="https://unpkg.com/scrollreveal"></script>
-
-  <!--===== MAIN JS =====-->
-  <script src="assets/js/main.js"></script>
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => menu.classList.toggle('show'));
+    }
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => menu.classList.remove('show'));
+    });
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        const sectionHeight = section.offsetHeight;
+        const id = section.getAttribute('id');
+        const link = document.querySelector('.nav__link[href="#' + id + '"]');
+        if (link) {
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            link.classList.add('active-link');
+          } else {
+            link.classList.remove('active-link');
+          }
+        }
+      });
+    });
+    const sr = ScrollReveal({ origin: 'bottom', distance: '36px', duration: 680, delay: 100, easing: 'cubic-bezier(.4,0,.2,1)', reset: false });
+    sr.reveal('.home__data', { origin: 'left' });
+    sr.reveal('.home__visual', { origin: 'right', delay: 200 });
+    sr.reveal('.about__img-wrap', { origin: 'left' });
+    sr.reveal('.about__tag, .about__title, .about__text, .about__highlights', { origin: 'right', interval: 100 });
+    sr.reveal('.skill__card', { interval: 80 });
+    sr.reveal('.project__card', { interval: 110 });
+    sr.reveal('.experience__card', { interval: 80 });
+    sr.reveal('.education__card', { interval: 120 });
+    sr.reveal('.contact__container > *', { interval: 150 });
+  </script>
 </body>
 
 </html>
