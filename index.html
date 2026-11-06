@@ -4,20 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="theme-color" content="#090e1a">
+  <meta name="description"
+    content="Abbu Bhakar Siddik — Full Stack AI Developer specializing in AI-integrated MERN & React Native applications, LLM orchestration (Gemini, Claude, Groq), Supabase, and REST API development.">
+  <meta name="keywords"
+    content="Abbu Bhakar Siddik, Full Stack AI Developer, MERN, Next.js, React Native, Supabase, PostgreSQL, Gemini AI, Prompt Engineering">
+  <meta name="author" content="Abbu Bhakar Siddik">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abbu Bhakar Siddik — Full Stack AI Developer">
+  <meta property="og:description"
+    content="Builder-mindset Full Stack AI Developer specializing in production-ready MERN & React Native applications.">
+  <meta property="og:image" content="assets/img/p9.png">
+
+  <!-- Boxicons 2.1.4 -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Google Fonts: Plus Jakarta Sans, DM Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Abbu Bhakar Siddik — Full Stack Developer</title>
+  <title>Abbu Bhakar Siddik — Full Stack AI Developer</title>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- TOP SCROLL PROGRESS BAR -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- HEADER / NAVBAR -->
   <header class="l-header">
     <nav class="nav">
-      <a href="#" class="nav__logo">Abbu Bhakar Siddik</a>
+      <a href="#home" class="nav__logo" aria-label="Abbu Bhakar Siddik Portfolio">
+        <span class="nav__logo-name">Abbu Bhakar Siddik</span>
+        <span class="nav__logo-badge">AI · FSD</span>
+      </a>
+
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
@@ -25,17 +52,27 @@
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
           <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </div>
-      <div class="nav__toggle" id="nav-toggle"><i class='bx bx-menu'></i></div>
+
+      <div class="nav__controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme"
+          title="Toggle dark/light theme">
+          <i class='bx bx-moon'></i>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <i class='bx bx-menu'></i>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main class="l-main">
 
-    <!-- HOME -->
+    <!-- HOME / HERO -->
     <section class="home" id="home">
       <div class="home__bg-dot home__bg-dot--1"></div>
       <div class="home__bg-dot home__bg-dot--2"></div>
@@ -43,56 +80,95 @@
         <div class="home__data">
           <div class="home__tag">
             <span class="home__tag-dot"></span>
-            Available for Internships &amp; Collaborations
+            Available for Roles &amp; High-Impact Projects
           </div>
+
           <h1 class="home__title">
             Hi, I'm<br>
-            <span class="home__title-color">Abbu Bhakar Siddik</span><br>
-            Full Stack Developer
+            <span class="home__title-color">Abbu Bhakar Siddik</span>
           </h1>
+
+          <div class="home__subtitle-wrapper">
+            <span class="home__subtitle-prefix">Specialized in </span>
+            <span class="home__subtitle-text" id="typewriter-text">Full Stack AI Developer</span>
+            <span class="home__cursor">|</span>
+          </div>
+
           <p class="home__description">
-            Builder-mindset developer crafting scalable, real-world web applications using MERN stack. Passionate about
-            AI-powered tools and clean, efficient solutions.
+            Builder-mindset Full Stack AI Developer engineering production-ready MERN &amp; React Native applications.
+            Hands-on expertise in LLM API orchestration (Gemini, Claude, Groq, OpenAI), prompt engineering, PostgreSQL
+            with RLS, and scalable cloud architectures.
           </p>
+
           <div class="home__actions">
-            <a href="#projects" class="button"><i class='bx bx-code-block'></i> View Projects</a>
-            <a href="assets/resume/Abbu-WebDev(Resume).pdf" class="button button--outline" download><i
-                class='bx bx-download'></i> Download Resume</a>
+            <a href="#projects" class="button"><i class='bx bx-rocket'></i> Explore Projects</a>
+            <a href="assets/resume/Abbu Bhakar Siddik (AI-FSD 2026).pdf" class="button button--outline"
+              download="Abbu_Bhakar_Siddik_Resume.pdf">
+              <i class='bx bx-download'></i> Download Resume
+            </a>
+            <a href="#contact" class="button button--ghost"><i class='bx bx-envelope'></i> Let's Connect</a>
           </div>
+
           <div class="home__social">
-            <a href="https://www.linkedin.com/in/abbu-bhakar-siddik-42466a3a7/" class="home__social-icon"
-              target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/AbbuBhakarSiddik?tab=repositories" class="home__social-icon" target="_blank"><i
-                class='bx bxl-github'></i></a>
-            <a href="mailto:abuakyt@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+            <a href="https://www.linkedin.com/in/abbu-bhakar-siddik" class="home__social-icon" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/AbbuBhakarSiddik" class="home__social-icon" target="_blank"
+              rel="noopener noreferrer" aria-label="GitHub Repositories"><i class='bx bxl-github'></i></a>
+            <a href="mailto:abbubhakarsiddik19@gmail.com" class="home__social-icon" aria-label="Email Me">
+              <i class='bx bx-envelope'></i>
+            </a>
+            <a href="tel:+917022615928" class="home__social-icon" aria-label="Call Phone">
+              <i class='bx bx-phone'></i>
+            </a>
           </div>
+
           <div class="home__stats">
-            <div>
-              <div class="home__stat-num">3+</div>
-              <div class="home__stat-label">Live Projects</div>
+            <div class="home__stat-card">
+              <div class="home__stat-num">5+</div>
+              <div class="home__stat-label">Shipped Apps</div>
             </div>
-            <div>
-              <div class="home__stat-num">MERN</div>
-              <div class="home__stat-label">Stack Expert</div>
+            <div class="home__stat-card">
+              <div class="home__stat-num">AI + FSD</div>
+              <div class="home__stat-label">MERN &amp; Mobile</div>
             </div>
-            <div>
-              <div class="home__stat-num">AI</div>
-              <div class="home__stat-label">Integrated Apps</div>
+            <div class="home__stat-card">
+              <div class="home__stat-num">8.0+</div>
+              <div class="home__stat-label">Academic SGPA</div>
+            </div>
+            <div class="home__stat-card">
+              <div class="home__stat-num">3</div>
+              <div class="home__stat-label">Certifications</div>
             </div>
           </div>
         </div>
+
         <div class="home__visual">
           <div class="home__blob-wrap">
+            <!-- Floating Decorative Glass Pills -->
+            <div class="hero-float hero-float--1"><i class='bx bx-brain'></i><span>Gemini &amp; Groq AI</span></div>
+            <div class="hero-float hero-float--2"><i class='bx bxl-react'></i><span>Next.js &amp; MERN</span></div>
+            <div class="hero-float hero-float--3"><i class='bx bx-mobile-alt'></i><span>React Native &amp; Expo</span>
+            </div>
+            <div class="hero-float hero-float--4"><i class='bx bxl-postgresql'></i><span>Supabase &amp; RLS</span></div>
+
             <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4070f4" />
+                  <stop offset="55%" stop-color="#6366f1" />
+                  <stop offset="100%" stop-color="#7c3aed" />
+                </linearGradient>
+              </defs>
               <mask id="mask0" mask-type="alpha">
                 <path
                   d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
               </mask>
               <g mask="url(#mask0)">
-                <path
+                <path fill="url(#blobGradient)"
                   d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                <image class="home__blob-img" x="50" y="60" href="assets/img/p1.png" />
+                <image class="home__blob-img" x="-15" y="5" width="510" height="709" href="assets/img/p9.png"
+                  xlink:href="assets/img/p9.png" />
               </g>
             </svg>
           </div>
@@ -104,32 +180,51 @@
     <section class="about section" id="about">
       <div class="bd-grid">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">A little about who I am and what drives me</p>
+        <p class="section-subtitle">Engineering scalable, real-world systems with curiosity, discipline, and clean code
+        </p>
+
         <div class="about__container">
           <div class="about__img-wrap">
-            <img src="assets/img/p2.png" alt="Abbu Bhakar Siddik">
+            <div class="about__img-card">
+              <img src="assets/img/p2.png" alt="Abbu Bhakar Siddik">
+              <div class="about__img-badge">
+                <strong>Full Stack AI Developer</strong>
+                <span>B.E. CSE (Lateral) · 8.0+ Diploma SGPA</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <span class="about__tag">Builder Mindset Developer</span>
-            <h2 class="about__title">Turning ideas into real, working products</h2>
+
+          <div class="about__content">
+            <span class="about__tag"><i class='bx bx-user-check'></i> Builder Mindset Developer</span>
+            <h2 class="about__title">Turning complex problems into resilient, deployed software</h2>
             <p class="about__text">
-              I'm a full stack developer who discovered my passion for computers during my Diploma in CSE — and never
-              looked back. What started as curiosity grew into a deep love for building things that actually work and
+              I am a Full Stack Developer who discovered my obsession for systems during my Diploma in Computer Science
+              &amp; Engineering at H.M.S Polytechnic, graduating with above 8.0 SGPA across every single semester. What
+              began as curiosity has grown into deep craftsmanship: architecting end-to-end platforms that actually
               solve real problems.
             </p>
             <p class="about__text">
-              I work quietly and deeply — breaking down complex problems into clean, efficient solutions. Strong English
-              communication skills combined with hands-on technical ability means I can build it and explain it clearly.
-              Currently pursuing BE in CSE while building AI-integrated platforms, expanding into mobile development,
-              and sharpening my skills every day.
+              Currently pursuing my Bachelor of Engineering (B.E.) in CSE at Shridevi Institute of Engineering and
+              Technology, I specialize in building AI-integrated MERN and cross-platform React Native (Expo)
+              applications. From architecting <strong>VendorAX</strong> (a multi-vendor SaaS marketplace powered by
+              Gemini AI and Socket.io) to <strong>AlphaDex</strong> (an AI-curated learning ecosystem with Supabase Edge
+              Functions and PostgreSQL RLS), I thrive on shipping clean, production-grade software.
             </p>
+            <p class="about__text">
+              I work with deep focus and ownership — breaking down ambiguous requirements into elegant APIs, strict
+              TypeScript logic, and intuitive user experiences. Combined with strong English communication, I can build
+              complex architectures and explain every technical trade-off clearly.
+            </p>
+
             <div class="about__highlights">
               <span class="about__highlight-chip">🔨 Builder Mindset</span>
+              <span class="about__highlight-chip">🤖 Prompt Engineering &amp; LLMs</span>
+              <span class="about__highlight-chip">⚛️ MERN &amp; Next.js Ecosystem</span>
+              <span class="about__highlight-chip">📱 React Native (Expo)</span>
+              <span class="about__highlight-chip">🔐 Supabase &amp; PostgreSQL RLS</span>
+              <span class="about__highlight-chip">⚡ Real-Time Socket.io</span>
               <span class="about__highlight-chip">💬 Strong Communicator</span>
-              <span class="about__highlight-chip">🤖 Prompt Engineer</span>
-              <span class="about__highlight-chip">⚡ Fast Learner</span>
-              <span class="about__highlight-chip">🚀 Self-Driven</span>
-              <span class="about__highlight-chip">📱 Mobile Dev (Learning)</span>
+              <span class="about__highlight-chip">🚀 End-to-End Deployments</span>
             </div>
           </div>
         </div>
@@ -139,134 +234,342 @@
     <!-- SKILLS -->
     <section class="skills section" id="skills">
       <div class="bd-grid">
-        <h2 class="section-title">Skills</h2>
-        <p class="section-subtitle">Technologies I work with to build full stack applications</p>
+        <h2 class="section-title">Skills &amp; Modern Tech Stack</h2>
+        <p class="section-subtitle">Production-tested tools and frameworks I leverage to build scalable web, mobile, and
+          AI solutions</p>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs skill-filter-tabs">
+          <button class="filter-btn skill-filter-btn active" data-filter="all">All Stack</button>
+          <button class="filter-btn skill-filter-btn" data-filter="ai">AI &amp; LLM</button>
+          <button class="filter-btn skill-filter-btn" data-filter="frontend">Frontend &amp; Mobile</button>
+          <button class="filter-btn skill-filter-btn" data-filter="backend">Backend &amp; APIs</button>
+          <button class="filter-btn skill-filter-btn" data-filter="database">Database &amp; Cloud</button>
+          <button class="filter-btn skill-filter-btn" data-filter="tools">DevOps &amp; Tools</button>
+        </div>
+
         <div class="skills__container">
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">React.js</div>
-              <ul class="skill__popup-points">
-                <li>Built multiple SPAs with component-based architecture</li>
-                <li>React Hooks — useState, useEffect, useContext</li>
-                <li>React Router for client-side navigation</li>
-                <li>Used in NextPath AI, AOX Music, Crypto Wallet</li>
-              </ul>
-              <span class="skill__popup-tag">Frontend</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bxl-react'></i></div>
-              <div>
-                <div class="skill__name">React.js</div>
-                <div class="skill__level">Frontend Development</div>
+          <!-- 1. Prompt Engineering (AI) -->
+          <div class="skill__card" data-category="ai" data-accent="ai">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-brain'></i></div>
+                <div>
+                  <div class="skill__name">Prompt Engineering</div>
+                  <div class="skill__level">AI Orchestration &amp; Evaluation</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>Designing context-aware system prompts for Gemini, Claude &amp; GPT</li>
+                <li>Few-shot prompting, structured JSON schema output enforcement</li>
+                <li>Multimodal moderation for user attachments &amp; chat safety</li>
+                <li>NVIDIA Certified in Building LLM Applications with Prompt Engineering</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">AI &amp; Prompt Eng</span>
+              <span class="skill__applied">NextPath AI · AlphaDex</span>
+            </div>
           </div>
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">JavaScript (ES6+)</div>
-              <ul class="skill__popup-points">
-                <li>Async/Await, Promises, Fetch API</li>
-                <li>DOM manipulation and event handling</li>
-                <li>Array &amp; object methods, destructuring, spread</li>
-                <li>Core language behind all my full stack projects</li>
-              </ul>
-              <span class="skill__popup-tag">Core Language</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bxl-javascript'></i></div>
-              <div>
-                <div class="skill__name">JavaScript</div>
-                <div class="skill__level">Core Language</div>
+          <!-- 2. LLM API Integration (AI) -->
+          <div class="skill__card" data-category="ai" data-accent="ai">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-bot'></i></div>
+                <div>
+                  <div class="skill__name">LLM APIs (Gemini, Groq, OpenAI)</div>
+                  <div class="skill__level">Intelligent Application Logic</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>Gemini AI integration for dynamic product descriptions &amp; smart tagging</li>
+                <li>Groq low-latency fallback routing for instant conversational responses</li>
+                <li>Resume parsing, career trajectory models, and automated study planning</li>
+                <li>Token management, rate-limiting handlers &amp; streaming completions</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">LLM Integration</span>
+              <span class="skill__applied">VendorAX · NextPath</span>
+            </div>
           </div>
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">Node.js / Express</div>
-              <ul class="skill__popup-points">
-                <li>RESTful API design and development</li>
-                <li>Middleware, routing, and error handling</li>
-                <li>JWT authentication and protected routes</li>
-                <li>Backend for NextPath AI and AOX Music</li>
-              </ul>
-              <span class="skill__popup-tag">Backend</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bxl-nodejs'></i></div>
-              <div>
-                <div class="skill__name">Node.js / Express</div>
-                <div class="skill__level">Backend Development</div>
+          <!-- 3. React.js & Next.js (Frontend) -->
+          <div class="skill__card" data-category="frontend" data-accent="first-color">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-react'></i></div>
+                <div>
+                  <div class="skill__name">React.js &amp; Next.js</div>
+                  <div class="skill__level">Modern Frontend Architecture</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>Next.js App Router, SSR, SSG and dynamic server components</li>
+                <li>Custom React Hooks, Context API, state machines &amp; modular UI architecture</li>
+                <li>Dynamic routing, code-splitting &amp; web performance optimization</li>
+                <li>Multi-role buyer, seller, and admin portals in VendorAX</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">Frontend Core</span>
+              <span class="skill__applied">VendorAX · AOX Music</span>
+            </div>
           </div>
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">MongoDB</div>
-              <ul class="skill__popup-points">
-                <li>Schema design with Mongoose ODM</li>
-                <li>CRUD operations and aggregation pipelines</li>
-                <li>Data modeling for real-world applications</li>
-                <li>Primary database across all MERN projects</li>
-              </ul>
-              <span class="skill__popup-tag">Database</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bx-data'></i></div>
-              <div>
-                <div class="skill__name">MongoDB</div>
-                <div class="skill__level">Database</div>
+          <!-- 4. React Native & Expo (Mobile) -->
+          <div class="skill__card" data-category="frontend" data-accent="cyan">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-mobile-alt'></i></div>
+                <div>
+                  <div class="skill__name">React Native (Expo)</div>
+                  <div class="skill__level">Cross-Platform Mobile Dev</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>Cross-platform iOS and Android mobile app development with Expo</li>
+                <li>Expo Router navigation, gesture handlers, and responsive native screens</li>
+                <li>Secure local token storage (Expo SecureStore) &amp; offline cache handling</li>
+                <li>Flagship mobile client for AlphaDex research ecosystem</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">Mobile Dev</span>
+              <span class="skill__applied">AlphaDex Mobile</span>
+            </div>
           </div>
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">Prompt Engineering</div>
-              <ul class="skill__popup-points">
-                <li>Designing effective prompts for Claude &amp; GPT models</li>
-                <li>AI feature integration into real web applications</li>
-                <li>Resume analysis &amp; career AI in NextPath AI</li>
-                <li>Building AI-powered tools using API integrations</li>
-              </ul>
-              <span class="skill__popup-tag">AI / LLM</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bx-brain'></i></div>
-              <div>
-                <div class="skill__name">Prompt Engineering</div>
-                <div class="skill__level">AI / LLM Integration</div>
+          <!-- 5. TypeScript & JavaScript (Frontend/Core) -->
+          <div class="skill__card" data-category="frontend" data-accent="first-color">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-typescript'></i></div>
+                <div>
+                  <div class="skill__name">TypeScript &amp; JavaScript (ES6+)</div>
+                  <div class="skill__level">Type-Safe &amp; Modern Core</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>TypeScript strict-mode configuration reporting 0 type errors</li>
+                <li>Interfaces, generics, union types, and runtime schema validation</li>
+                <li>Modern ES6+: async/await, closures, promises, map/reduce, destructuring</li>
+                <li>Foundation across all backend APIs and frontend clients</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">Core Languages</span>
+              <span class="skill__applied">AlphaDex · VendorAX</span>
+            </div>
           </div>
 
-          <div class="skill__card">
-            <div class="skill__popup">
-              <div class="skill__popup-title">Git &amp; GitHub</div>
-              <ul class="skill__popup-points">
-                <li>Version control across all projects</li>
-                <li>Branching, merging, and pull requests</li>
-                <li>Deploying projects via GitHub + Vercel</li>
-                <li>Maintaining clean commit history</li>
-              </ul>
-              <span class="skill__popup-tag">Version Control</span>
-            </div>
-            <div class="skill__header">
-              <div class="skill__icon-wrap"><i class='bx bxl-git'></i></div>
-              <div>
-                <div class="skill__name">Git &amp; GitHub</div>
-                <div class="skill__level">Version Control</div>
+          <!-- 6. Tailwind CSS & UI Design (Frontend) -->
+          <div class="skill__card" data-category="frontend" data-accent="cyan">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-tailwind-css'></i></div>
+                <div>
+                  <div class="skill__name">Tailwind CSS &amp; Modern UI</div>
+                  <div class="skill__level">Glassmorphism &amp; Responsive UX</div>
+                </div>
               </div>
+              <ul class="skill__points">
+                <li>Utility-first styling, design system tokens, and CSS custom properties</li>
+                <li>Responsive breakpoints, micro-interactions, and GPU-accelerated keyframes</li>
+                <li>Dark/Light mode themes, backdrop blur, and modern card styling</li>
+                <li>Designed seller dashboards and interactive data visualizations</li>
+              </ul>
             </div>
-            <div class="skill__hover-hint"><i class='bx bx-info-circle'></i> Hover for details</div>
+            <div class="skill__footer">
+              <span class="skill__tag">UI / Styling</span>
+              <span class="skill__applied">VendorAX · Portfolio</span>
+            </div>
+          </div>
+
+          <!-- 7. Node.js & Express.js (Backend) -->
+          <div class="skill__card" data-category="backend" data-accent="emerald">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-nodejs'></i></div>
+                <div>
+                  <div class="skill__name">Node.js &amp; Express.js</div>
+                  <div class="skill__level">Scalable Backend Architecture</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Production RESTful API design with modular controller-service pattern</li>
+                <li>Custom middleware for JWT authentication, role-based access control (RBAC)</li>
+                <li>Centralized error handling, request sanitization, and CORS security</li>
+                <li>Powering NextPath AI, VendorAX, and AOX Music backends</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Backend APIs</span>
+              <span class="skill__applied">VendorAX · NextPath</span>
+            </div>
+          </div>
+
+          <!-- 8. Socket.io & Real-Time (Backend) -->
+          <div class="skill__card" data-category="backend" data-accent="emerald">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-broadcast'></i></div>
+                <div>
+                  <div class="skill__name">Socket.io &amp; Real-Time</div>
+                  <div class="skill__level">Event-Driven Architecture</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Bi-directional WebSocket communication with room-based broadcast</li>
+                <li>Live seller notification pipeline for new orders and inventory alerts</li>
+                <li>Real-time dashboard telemetry and dynamic client state synchronization</li>
+                <li>Integrated in VendorAX marketplace for live order event streams</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">WebSockets</span>
+              <span class="skill__applied">VendorAX Live Hub</span>
+            </div>
+          </div>
+
+          <!-- 9. Supabase & Deno Edge (Backend) -->
+          <div class="skill__card" data-category="backend" data-accent="emerald">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-server'></i></div>
+                <div>
+                  <div class="skill__name">Supabase &amp; Deno Edge</div>
+                  <div class="skill__level">Serverless Cloud Functions</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Serverless Edge Functions running on Deno with near-zero latency</li>
+                <li>Federated research queries bridging PostgreSQL and external arXiv APIs</li>
+                <li>Secure API key rotation and serverless token verification</li>
+                <li>Automated study planner generation executed at edge in AlphaDex</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Edge Functions</span>
+              <span class="skill__applied">AlphaDex Platform</span>
+            </div>
+          </div>
+
+          <!-- 10. MongoDB & Mongoose ODM (Database) -->
+          <div class="skill__card" data-category="database" data-accent="amber">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-mongodb'></i></div>
+                <div>
+                  <div class="skill__name">MongoDB &amp; Mongoose</div>
+                  <div class="skill__level">NoSQL Document Data Modeling</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Complex schema design, Mongoose middleware, indexing, and validation</li>
+                <li>Aggregation pipelines for multi-vendor revenue and analytics reporting</li>
+                <li>Document referencing, population, and atomic transactions</li>
+                <li>Core data store across all MERN production applications</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Database</span>
+              <span class="skill__applied">VendorAX · NextPath</span>
+            </div>
+          </div>
+
+          <!-- 11. PostgreSQL & Row Level Security (Database) -->
+          <div class="skill__card" data-category="database" data-accent="first-color">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-postgresql'></i></div>
+                <div>
+                  <div class="skill__name">PostgreSQL &amp; Supabase RLS</div>
+                  <div class="skill__level">Relational Data &amp; Security</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Relational database schema design with strict foreign keys &amp; constraints</li>
+                <li>Row Level Security (RLS) policies guaranteeing granular tenant data isolation</li>
+                <li>Indexed full-text search with verified 18–35 ms query latency benchmarks</li>
+                <li>Supabase Auth integration with role-based policies in AlphaDex</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Relational DB</span>
+              <span class="skill__applied">AlphaDex Backend</span>
+            </div>
+          </div>
+
+          <!-- 12. Cloudflare R2 & Cloudinary (Database/Cloud) -->
+          <div class="skill__card" data-category="database" data-accent="pink">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-cloud'></i></div>
+                <div>
+                  <div class="skill__name">Cloudflare R2 &amp; Cloudinary</div>
+                  <div class="skill__level">Cloud Storage &amp; Media CDN</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>S3-compatible zero-egress cloud bucket storage using Cloudflare R2</li>
+                <li>Secure presigned URL upload workflows for user study files and notes</li>
+                <li>Cloudinary automated media optimization, transformation, and fast CDN delivery</li>
+                <li>Product media asset pipeline in VendorAX and AlphaDex drive</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Cloud Storage</span>
+              <span class="skill__applied">AlphaDex · VendorAX</span>
+            </div>
+          </div>
+
+          <!-- 13. Git, GitHub & CI/CD (Tools) -->
+          <div class="skill__card" data-category="tools" data-accent="amber">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bxl-git'></i></div>
+                <div>
+                  <div class="skill__name">Git, GitHub &amp; DevOps</div>
+                  <div class="skill__level">Version Control &amp; Deployment</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Feature-branch workflows, rebase conventions, and clean semantic commits</li>
+                <li>Automated deployment pipelines to Vercel, Render, and Supabase</li>
+                <li>Environment variable management, secrets security, and release branching</li>
+                <li>Maintaining open-source and personal repositories on GitHub</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">DevOps &amp; VCS</span>
+              <span class="skill__applied">All 5 Repositories</span>
+            </div>
+          </div>
+
+          <!-- 14. Razorpay & Web3.js (Tools) -->
+          <div class="skill__card" data-category="tools" data-accent="ai">
+            <div>
+              <div class="skill__header">
+                <div class="skill__icon-wrap"><i class='bx bx-credit-card'></i></div>
+                <div>
+                  <div class="skill__name">Razorpay &amp; Web3.js</div>
+                  <div class="skill__level">Fintech &amp; Blockchain Protocols</div>
+                </div>
+              </div>
+              <ul class="skill__points">
+                <li>Razorpay payment gateway checkout integration and webhook signature verification</li>
+                <li>Order lifecycle state machines handling pending, success, and refund states</li>
+                <li>Web3.js blockchain client integration for crypto wallet asset management</li>
+                <li>Real-time on-chain transaction exploration and visualizer</li>
+              </ul>
+            </div>
+            <div class="skill__footer">
+              <span class="skill__tag">Fintech / Web3</span>
+              <span class="skill__applied">VendorAX · Crypto Wallet</span>
+            </div>
           </div>
 
         </div>
@@ -276,38 +579,260 @@
     <!-- PROJECTS -->
     <section class="projects section" id="projects">
       <div class="bd-grid">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">Real-world applications built and shipped</p>
+        <h2 class="section-title">Featured &amp; Live Projects</h2>
+        <p class="section-subtitle">Production-ready SaaS platforms, cross-platform mobile apps, and full-stack
+          solutions built and shipped</p>
+
+        <!-- Project Filter Tabs -->
+        <div class="filter-tabs project-filter-tabs">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="ai-saas">AI &amp; SaaS</button>
+          <button class="filter-btn project-filter-btn" data-filter="mobile">Mobile App</button>
+          <button class="filter-btn project-filter-btn" data-filter="fullstack-web3">Full Stack &amp; Web3</button>
+        </div>
+
         <div class="projects__container">
 
-          <div class="project__card">
-            <span class="project__badge"><i class='bx bx-bot'></i> AI Powered</span>
+          <!-- FLAGSHIP PROJECT 01: VENDORAX -->
+          <article class="project__card project__card--featured project__card--vendorax" data-category="ai-saas">
+            <div class="project__visual project__visual--vendorax"
+              aria-label="VendoraX marketplace dashboard interface illustration">
+              <div class="project__visual-top">
+                <span class="visual-dot"></span><span class="visual-dot"></span><span class="visual-dot"></span>
+                <span class="visual-label">VENDORAX / MULTI-VENDOR STUDIO</span>
+              </div>
+              <div class="vendor-preview">
+                <div class="vendor-topbar">
+                  <strong>vendor<span>X</span></strong>
+                  <span class="vendor-avatar">S</span>
+                </div>
+                <div class="vendor-body">
+                  <div class="vendor-side">
+                    <i class='bx bx-home-alt'></i><i class='bx bx-store'></i><i class='bx bx-package'></i><i
+                      class='bx bx-bar-chart-alt-2'></i>
+                  </div>
+                  <div class="vendor-main">
+                    <small>OVERVIEW / STORE PERFORMANCE</small>
+                    <strong>Good morning, Seller 👋</strong>
+                    <div class="vendor-metrics">
+                      <div><small>Revenue</small><b>Analytics</b><em>↗ Live sync</em></div>
+                      <div><small>Orders</small><b>Tracking</b><em>● Socket.io</em></div>
+                      <div><small>AI TOOLS</small><b>Seller AI</b><em>✦ Gemini</em></div>
+                    </div>
+                    <div class="vendor-chart">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="project__visual-caption">MULTI-VENDOR COMMERCE · SAAS PLATFORM (2026)</span>
+            </div>
+
+            <div class="project__content">
+              <div class="project__eyebrow">
+                <span class="project__badge"><i class='bx bx-store'></i> Full-Stack SaaS</span>
+                <span class="project__featured-label">FLAGSHIP PROJECT 01</span>
+              </div>
+              <h3>VendorAX</h3>
+              <p class="project__lead">
+                An AI-powered multi-vendor marketplace platform enabling independent sellers to launch branded
+                storefronts, manage product inventories, and handle real-time customer orders with intelligent
+                automation.
+              </p>
+              <div class="project__highlights">
+                <span><i class='bx bx-check-circle'></i> Multi-role system (Seller / Buyer / Admin) with JWT &amp;
+                  RBAC</span>
+                <span><i class='bx bx-check-circle'></i> Gemini AI for auto-generated product copy &amp; smart
+                  pricing</span>
+                <span><i class='bx bx-check-circle'></i> Socket.io live seller notifications &amp; order event
+                  streams</span>
+                <span><i class='bx bx-check-circle'></i> Razorpay checkout lifecycle &amp; Cloudinary CDN media</span>
+              </div>
+              <div class="project__stack">
+                <span>Next.js</span><span>React</span><span>Tailwind
+                  CSS</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.io</span><span>Gemini
+                  AI</span><span>Cloudinary</span><span>Razorpay</span>
+              </div>
+              <details class="project__details">
+                <summary>Explore engineering details <i class='bx bx-chevron-down'></i></summary>
+                <div class="project__details-body">
+                  <p><strong>Architecture:</strong> Next.js client with responsive buyer and seller portals backed by a
+                    modular Node.js / Express API and MongoDB Atlas with Mongoose ODM.</p>
+                  <p><strong>Security &amp; Auth:</strong> HTTP-only cookies, JWT verification middleware, role-based
+                    access control protecting seller management and administrative routes.</p>
+                  <p><strong>Real-Time Pipeline:</strong> Socket.io rooms segregated by store IDs for instantaneous
+                    order placement notifications, inventory changes, and seller analytics updates.</p>
+                  <p class="project__note">Razorpay payment verification with automated order transition logic
+                    implemented in production flow.</p>
+                </div>
+              </details>
+              <div class="project__actions">
+                <a href="https://github.com/AbbuBhakarSiddik" class="project__link" target="_blank"
+                  rel="noopener noreferrer">
+                  Explore GitHub <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <span class="project__status"><i class='bx bx-layer'></i> Production SaaS Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FLAGSHIP PROJECT 02: ALPHADEX -->
+          <article class="project__card project__card--featured project__card--alphadex" data-category="mobile">
+            <div class="project__visual project__visual--alphadex"
+              aria-label="Alphadex learning platform interface illustration">
+              <div class="project__visual-top">
+                <span class="visual-dot"></span><span class="visual-dot"></span><span class="visual-dot"></span>
+                <span class="visual-label">ALPHADEX / LEARNING SPACE</span>
+              </div>
+              <div class="alpha-preview">
+                <div class="alpha-sidebar">
+                  <span class="alpha-mark">A</span>
+                  <i class='bx bx-grid-alt'></i><i class='bx bx-book-open'></i><i class='bx bx-brain'></i><i
+                    class='bx bx-calendar'></i>
+                </div>
+                <div class="alpha-content">
+                  <div class="alpha-heading">Your learning universe <span>✦</span></div>
+                  <div class="alpha-subheading">Curated for deep research</div>
+                  <div class="alpha-feature-row">
+                    <div class="alpha-feature alpha-feature--wide">
+                      <small>AI TUTOR</small>
+                      <strong>Ask. Explore. Understand.</strong>
+                      <span>Gemini + Groq fallback</span>
+                    </div>
+                    <div class="alpha-feature">
+                      <small>AI PLANNER</small>
+                      <strong>7-day roadmap</strong>
+                      <span>Adaptive schedule</span>
+                    </div>
+                  </div>
+                  <div class="alpha-feed"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <span class="project__visual-caption">CROSS-PLATFORM MOBILE · CLOUD AI (2026)</span>
+            </div>
+
+            <div class="project__content">
+              <div class="project__eyebrow">
+                <span class="project__badge"><i class='bx bx-brain'></i> AI Engineering</span>
+                <span class="project__featured-label">FLAGSHIP PROJECT 02</span>
+              </div>
+              <h3>AlphaDex</h3>
+              <p class="project__lead">
+                A cross-platform distraction-free learning and research mobile ecosystem powered by deterministic
+                content ranking, contextual AI tutoring, and autonomous study plan generation.
+              </p>
+              <div class="project__highlights">
+                <span><i class='bx bx-check-circle'></i> Deterministic, unit-tested scoring algorithm with recency
+                  decay</span>
+                <span><i class='bx bx-check-circle'></i> Gemini AI tutor with high-speed Groq fallback
+                  architecture</span>
+                <span><i class='bx bx-check-circle'></i> Supabase Auth with Row Level Security (RLS) &amp; Edge
+                  Functions</span>
+                <span><i class='bx bx-check-circle'></i> Indexed PostgreSQL full-text search benchmarked at 18–35
+                  ms</span>
+                <span><i class='bx bx-check-circle'></i> Cloudflare R2 personal cloud drive &amp; multimodal
+                  moderation</span>
+              </div>
+              <div class="project__stack">
+                <span>React
+                  Native</span><span>Expo</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Deno</span><span>Gemini
+                  AI</span><span>Groq</span><span>Cloudflare R2</span>
+              </div>
+              <details class="project__details">
+                <summary>Explore engineering details <i class='bx bx-chevron-down'></i></summary>
+                <div class="project__details-body">
+                  <p><strong>Mobile Client:</strong> Built with React Native and Expo in TypeScript strict-mode (0
+                    reported type errors). Implements gesture navigators and secure token storage.</p>
+                  <p><strong>Serverless Backend:</strong> Supabase Edge Functions written in TypeScript running on Deno.
+                    Handles arXiv scientific paper proxying and automated study scheduling.</p>
+                  <p><strong>Data Governance:</strong> PostgreSQL with Row Level Security (RLS) policies guaranteeing
+                    total privacy for personal notes and saved learning paths.</p>
+                  <p class="project__note">5/5 feed scoring test suites verified passing with exponential recency decay
+                    formula.</p>
+                </div>
+              </details>
+              <div class="project__actions">
+                <a href="https://github.com/AbbuBhakarSiddik" class="project__link" target="_blank"
+                  rel="noopener noreferrer">
+                  Explore GitHub <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <span class="project__status"><i class='bx bx-code-alt'></i> Verified Technical Benchmark</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: NEXTPATH AI -->
+          <div class="project__card project__card--nextpath" data-category="ai-saas">
+            <span class="project__badge"><i class='bx bx-bot'></i> AI Career Platform</span>
             <h3>NextPath AI</h3>
-            <p>A student-focused full-stack platform with AI-driven tools including resume analysis, career path
-              recommendations, and developer resources. Built with scalable MERN architecture.</p>
-            <div class="project__tech">React • Node.js • MongoDB • AI API</div>
-            <a href="https://nextpath-v2.vercel.app/home" class="project__link" target="_blank">View Live <i
-                class='bx bx-right-arrow-alt'></i></a>
+            <p>
+              A student-focused full-stack platform featuring AI-driven career guidance, intelligent resume parsing,
+              personalized career path recommendations, and interactive developer resources. Built on scalable MERN
+              architecture.
+            </p>
+            <div class="project__highlights" style="margin-bottom: 0.5rem;">
+              <span><i class='bx bx-check-circle'></i> Automated AI resume parsing &amp; skill assessment</span>
+              <span><i class='bx bx-check-circle'></i> Prompt-engineered personalized career trajectories</span>
+            </div>
+            <div class="project__stack">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>LLM
+                APIs</span><span>Vercel</span>
+            </div>
+            <div class="project__actions">
+              <a href="https://nextpath-v2.vercel.app/home" class="project__link" target="_blank"
+                rel="noopener noreferrer">
+                View Live Demo <i class='bx bx-link-external'></i>
+              </a>
+              <span class="project__status"><i class='bx bx-check'></i> Live on Vercel</span>
+            </div>
           </div>
 
-          <div class="project__card">
-            <span class="project__badge"><i class='bx bx-bitcoin'></i> Blockchain</span>
-            <h3>Crypto Wallet &amp; Explorer</h3>
-            <p>A blockchain-based crypto wallet enabling users to store, send and receive cryptocurrencies. Includes a
-              real-time transaction explorer with Web3 data visualization.</p>
-            <div class="project__tech">React • Web3.js • Blockchain</div>
-            <a href="https://crypto-wallet-sigma-three.vercel.app/" class="project__link" target="_blank">View Live <i
-                class='bx bx-right-arrow-alt'></i></a>
-          </div>
-
-          <div class="project__card">
-            <span class="project__badge"><i class='bx bx-music'></i> Full Stack</span>
+          <!-- PROJECT 04: AOX MUSIC -->
+          <div class="project__card project__card--aox" data-category="fullstack-web3">
+            <span class="project__badge"><i class='bx bx-music'></i> Full Stack Audio</span>
             <h3>AOX Music</h3>
-            <p>A dynamic music streaming app with seamless playback, user-curated playlists, and a music library
-              manager. Node.js backend handles efficient media management.</p>
-            <div class="project__tech">React • Node.js • Express</div>
-            <a href="https://aox-music.vercel.app/" class="project__link" target="_blank">View Live <i
-                class='bx bx-right-arrow-alt'></i></a>
+            <p>
+              A dynamic music streaming web application with seamless audio playback, user-curated playlist management,
+              responsive audio visualizer, and dynamic media library indexing backed by Node.js.
+            </p>
+            <div class="project__highlights" style="margin-bottom: 0.5rem;">
+              <span><i class='bx bx-check-circle'></i> Custom audio player state machine &amp; playlist queue</span>
+              <span><i class='bx bx-check-circle'></i> Node.js/Express media streaming backend</span>
+            </div>
+            <div class="project__stack">
+              <span>React</span><span>Node.js</span><span>Express</span><span>Audio API</span><span>CSS Modules</span>
+            </div>
+            <div class="project__actions">
+              <a href="https://aox-music.vercel.app/" class="project__link" target="_blank" rel="noopener noreferrer">
+                View Live Demo <i class='bx bx-link-external'></i>
+              </a>
+              <span class="project__status"><i class='bx bx-check'></i> Live on Vercel</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 05: CRYPTO WALLET & TRANSACTION EXPLORER -->
+          <div class="project__card project__card--crypto" data-category="fullstack-web3">
+            <span class="project__badge"><i class='bx bx-bitcoin'></i> Web3 &amp; Blockchain</span>
+            <h3>Crypto Wallet &amp; Explorer</h3>
+            <p>
+              A decentralized blockchain wallet interface enabling users to store, send, and receive digital assets.
+              Includes a real-time transaction explorer using Web3.js for transparent on-chain data inspection and
+              visualization.
+            </p>
+            <div class="project__highlights" style="margin-bottom: 0.5rem;">
+              <span><i class='bx bx-check-circle'></i> Web3.js blockchain transaction visualizer</span>
+              <span><i class='bx bx-check-circle'></i> Real-time wallet balance &amp; gas fee tracking</span>
+            </div>
+            <div class="project__stack">
+              <span>React</span><span>Web3.js</span><span>Ethereum</span><span>Chart.js</span><span>Vercel</span>
+            </div>
+            <div class="project__actions">
+              <a href="https://crypto-wallet-sigma-three.vercel.app/" class="project__link" target="_blank"
+                rel="noopener noreferrer">
+                View Live Demo <i class='bx bx-link-external'></i>
+              </a>
+              <span class="project__status"><i class='bx bx-check'></i> Live on Vercel</span>
+            </div>
           </div>
 
         </div>
@@ -317,36 +842,191 @@
     <!-- EXPERIENCE -->
     <section class="experience section" id="experience">
       <div class="bd-grid">
-        <h2 class="section-title">Experience</h2>
-        <p class="section-subtitle">Projects I've owned and led end-to-end</p>
+        <h2 class="section-title">Experience &amp; Engineering History</h2>
+        <p class="section-subtitle">Real-world applications and architectures I've owned and engineered from concept to
+          deployment</p>
+
         <div class="experience__container">
 
+          <!-- Experience 1: VendorAX -->
           <div class="experience__card">
             <div class="experience__header">
-              <h3>NextPath AI — Full Stack Developer</h3>
-              <span class="experience__date">2025 – Present</span>
+              <div class="experience__title-wrap">
+                <h3>VendorAX</h3>
+                <span class="experience__role">Lead Full Stack Developer</span>
+              </div>
+              <span class="experience__date">2026</span>
             </div>
-            <p>Developed a comprehensive student utility platform using the MERN stack. Integrated AI features like
-              resume analysis and career path recommendations, with a focus on scalable architecture and user-centric
-              design.</p>
+            <ul class="experience__bullets">
+              <li>Architected a SaaS multi-vendor marketplace enabling independent sellers to deploy branded storefronts
+                with complete catalog and order lifecycle management.</li>
+              <li>Integrated Gemini AI for automated product description generation, SEO tagging, and smart pricing
+                suggestions; configured Socket.io for live seller order notifications.</li>
+              <li>Designed a multi-role RBAC architecture (Seller / Buyer / Admin) with secure JWT authentication,
+                Razorpay payments, and Cloudinary media delivery.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span><span>Gemini
+                AI</span><span>Razorpay</span>
+            </div>
           </div>
 
+          <!-- Experience 2: AlphaDex -->
           <div class="experience__card">
             <div class="experience__header">
-              <h3>Crypto Wallet &amp; Explorer — Blockchain Developer</h3>
-              <span class="experience__date">2025</span>
+              <div class="experience__title-wrap">
+                <h3>AlphaDex</h3>
+                <span class="experience__role">Full Stack Mobile &amp; AI Developer</span>
+              </div>
+              <span class="experience__date">2026</span>
             </div>
-            <p>Built a secure blockchain interface for managing digital assets. Implemented a real-time transaction
-              explorer using Web3 technologies for on-chain data transparency and visualization.</p>
+            <ul class="experience__bullets">
+              <li>Built a cross-platform AI-curated learning app delivering a distraction-free feed of educational
+                videos, arXiv papers, and articles ranked by a deterministic scoring algorithm.</li>
+              <li>Engineered a Gemini AI tutor with Groq ultra-low latency fallback, 7-day adaptive AI study planner,
+                and multimodal attachment moderation.</li>
+              <li>Implemented Supabase Auth, PostgreSQL Row Level Security (RLS), serverless Deno Edge Functions, and
+                Cloudflare R2 personal cloud storage.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>React
+                Native</span><span>Expo</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Deno</span><span>Groq</span>
+            </div>
           </div>
 
+          <!-- Experience 3: NextPath AI -->
           <div class="experience__card">
             <div class="experience__header">
-              <h3>AOX Music — Full Stack Developer</h3>
-              <span class="experience__date">2025</span>
+              <div class="experience__title-wrap">
+                <h3>NextPath AI</h3>
+                <span class="experience__role">Full Stack Developer</span>
+              </div>
+              <span class="experience__date">Jun 2025 – Oct 2025</span>
             </div>
-            <p>Created a dynamic music streaming application with seamless playback and user-curated playlists.
-              Integrated a Node.js backend for efficient media management with a responsive React frontend.</p>
+            <ul class="experience__bullets">
+              <li>Built a full-stack AI career platform featuring automated resume parsing, real-time career trajectory
+                insights, and interactive developer utilities.</li>
+              <li>Integrated LLM APIs with structured prompt engineering to deliver personalized job advisory and skill
+                gap analysis.</li>
+              <li>Implemented JWT authentication, modular REST service architecture, and end-to-end continuous
+                deployment on Vercel.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>React.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>LLM
+                APIs</span><span>Vercel</span>
+            </div>
+          </div>
+
+          <!-- Experience 4: AOX Music -->
+          <div class="experience__card">
+            <div class="experience__header">
+              <div class="experience__title-wrap">
+                <h3>AOX Music</h3>
+                <span class="experience__role">Full Stack Developer</span>
+              </div>
+              <span class="experience__date">Dec 2025</span>
+            </div>
+            <ul class="experience__bullets">
+              <li>Developed a high-performance music streaming application featuring seamless playback, playlist
+                management, and responsive audio UI.</li>
+              <li>Engineered a Node.js and Express backend handling streaming audio assets, media indexing, and fast
+                client delivery.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>React.js</span><span>Node.js</span><span>Express</span><span>Media Streaming</span>
+            </div>
+          </div>
+
+          <!-- Experience 5: Crypto Wallet -->
+          <div class="experience__card">
+            <div class="experience__header">
+              <div class="experience__title-wrap">
+                <h3>Crypto Wallet &amp; Transaction Explorer</h3>
+                <span class="experience__role">Blockchain &amp; Web3 Developer</span>
+              </div>
+              <span class="experience__date">Nov 2025</span>
+            </div>
+            <ul class="experience__bullets">
+              <li>Built a secure Web3 digital asset manager and real-time transaction explorer utilizing Web3.js for
+                on-chain blockchain transparency.</li>
+              <li>Integrated interactive cryptographic data charts for monitoring live transfers, addresses, and gas
+                estimations.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>React.js</span><span>Web3.js</span><span>Ethereum</span><span>Blockchain</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS (NEW) -->
+    <section class="certifications section" id="certifications">
+      <div class="bd-grid">
+        <h2 class="section-title">Certifications &amp; Honors</h2>
+        <p class="section-subtitle">Industry credentials, verified technical competencies, and academic achievements</p>
+
+        <div class="cert__container">
+
+          <!-- NVIDIA Certification -->
+          <div class="cert__card cert__card--nvidia">
+            <div class="cert__top">
+              <div class="cert__icon"><i class='bx bx-chip'></i></div>
+              <span class="cert__badge">NVIDIA</span>
+            </div>
+            <h3>Building LLM Applications with Prompt Engineering</h3>
+            <div class="cert__issuer">NVIDIA Deep Learning Institute</div>
+            <div class="cert__year">Sep 2025 – Nov 2025</div>
+            <p>
+              Specialized certification covering prompt design patterns, few-shot prompting, structured JSON extraction,
+              LLM evaluation metrics, and building multi-turn agent workflows.
+            </p>
+          </div>
+
+          <!-- JPMorgan Chase Certification -->
+          <div class="cert__card cert__card--jpmc">
+            <div class="cert__top">
+              <div class="cert__icon"><i class='bx bx-briefcase'></i></div>
+              <span class="cert__badge">Forage</span>
+            </div>
+            <h3>Software Engineering Job Simulation</h3>
+            <div class="cert__issuer">JPMorgan Chase &amp; Co.</div>
+            <div class="cert__year">2026</div>
+            <p>
+              Practical simulation focused on interface testing, financial data streaming feeds, perspective graphing
+              tools, and production-grade code quality standards.
+            </p>
+          </div>
+
+          <!-- PraloTech Java Full Stack -->
+          <div class="cert__card cert__card--pralo">
+            <div class="cert__top">
+              <div class="cert__icon"><i class='bx bxl-java'></i></div>
+              <span class="cert__badge">PraloTech</span>
+            </div>
+            <h3>Java Full Stack Development</h3>
+            <div class="cert__issuer">PraloTech Professional Training</div>
+            <div class="cert__year">Jan 2024 – Apr 2024</div>
+            <p>
+              Intensive training in Object-Oriented Programming (OOP), enterprise Java architectures, relational
+              database schemas, and robust backend engineering.
+            </p>
+          </div>
+
+          <!-- Academic Honors -->
+          <div class="cert__card cert__card--honors">
+            <div class="cert__top">
+              <div class="cert__icon"><i class='bx bx-award'></i></div>
+              <span class="cert__badge">Academic Honor</span>
+            </div>
+            <h3>Consistent 8.0+ SGPA Academic Excellence</h3>
+            <div class="cert__issuer">H.M.S Polytechnic, Tumkur</div>
+            <div class="cert__year">2021 – 2024</div>
+            <p>
+              Maintained an outstanding academic record with above 8.0 SGPA in every semester across the entire Computer
+              Science &amp; Engineering curriculum.
+            </p>
           </div>
 
         </div>
@@ -357,39 +1037,61 @@
     <section class="education section" id="education">
       <div class="bd-grid">
         <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">My academic background in Computer Science</p>
-        <div class="education__container">
+        <p class="section-subtitle">Academic foundations in Computer Science &amp; Engineering</p>
 
-          <div class="education__card">
-            <div class="education__icon">🎓</div>
-            <h3>Diploma in Computer Science</h3>
-            <span>H.M.S Polytechnic, Tumkur</span>
-            <div class="education__year">2021 – 2024</div>
-            <p>Focused on software development, data structures, and web
-              technologies — where the passion for building first started.</p>
-          </div>
+        <div class="education__container">
 
           <div class="education__card">
             <div class="education__icon">🏛️</div>
             <h3>Bachelor of Engineering — Computer Science</h3>
-            <span>Shridevi Institute of Engineering and Technology</span>
-            <div class="education__year">2024 – Present</div>
-            <p>Currently pursuing BE in CSE (Lateral Entry). Focused on full stack development, real-world project
-              building, and expanding into AI-integrated applications.</p>
+            <span class="education__school">Shridevi Institute of Engineering and Technology</span>
+            <div class="education__meta">
+              <span class="education__year">Sep 2024 – Present</span>
+              <span class="education__grade">Lateral Entry</span>
+            </div>
+            <p>
+              Currently pursuing B.E. in CSE with a sharp focus on distributed systems, artificial intelligence
+              integrations, scalable full-stack application development, and algorithmic optimization.
+            </p>
+          </div>
+
+          <div class="education__card">
+            <div class="education__icon">🎓</div>
+            <h3>Diploma in Computer Science &amp; Engineering</h3>
+            <span class="education__school">H.M.S Polytechnic, Tumkur</span>
+            <div class="education__meta">
+              <span class="education__year">Nov 2021 – Mar 2024</span>
+              <span class="education__grade">Graduated with > 8.0 SGPA</span>
+            </div>
+            <p>
+              Core foundation in data structures, algorithms, operating systems, and web technologies. Maintained above
+              8.0 SGPA across every semester, discovering the drive for building impactful software.
+            </p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- RESUME -->
-    <section class="resume">
+    <!-- RESUME BANNER -->
+    <section class="resume" id="resume">
       <div class="resume__inner">
-        <h2 class="resume__title">Want the full picture?</h2>
-        <p class="resume__text">Download my resume for a detailed view of my skills, projects, and experience.</p>
-        <a href="assets/resume/Abbu-WebDev(Resume).pdf" class="button" download><i class='bx bx-download'></i>
-          Download
-          Resume</a>
+        <div class="resume__badge"><i class='bx bx-file'></i> Verified 2026 Technical Profile</div>
+        <h2 class="resume__title">Want the Full Picture?</h2>
+        <p class="resume__text">
+          Download my updated 2026 resume for an exhaustive breakdown of technical competencies, validated benchmark
+          latencies, and architectural milestones.
+        </p>
+        <div class="resume__actions">
+          <a href="assets/resume/Abbu Bhakar Siddik (AI-FSD 2026).pdf" class="button button--primary"
+            download="Abbu_Bhakar_Siddik_Resume.pdf">
+            <i class='bx bx-download'></i> Download Resume (PDF)
+          </a>
+          <a href="assets/resume/Abbu Bhakar Siddik (AI-FSD 2026).pdf" class="button button--outline" target="_blank"
+            rel="noopener noreferrer">
+            <i class='bx bx-file-blank'></i> Preview in Browser
+          </a>
+        </div>
       </div>
     </section>
 
@@ -397,51 +1099,104 @@
     <section class="contact section" id="contact">
       <div class="bd-grid">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">Open to internships, collaborations, and exciting projects</p>
+        <p class="section-subtitle">Open to full-time engineering positions, high-impact internships, and AI/Full Stack
+          collaborations</p>
+
         <div class="contact__container">
           <div>
-            <h3 class="contact__info-title">Got an opportunity or idea? Let's talk.</h3>
-            <p class="contact__info-text">I'm always open to hearing about interesting projects, internship roles, or
-              collaboration ideas. Drop a message and I'll get back to you.</p>
+            <h3 class="contact__info-title">Got an opportunity or idea? Let's build something remarkable.</h3>
+            <p class="contact__info-text">
+              I am actively seeking software engineering roles where I can contribute to production-grade applications,
+              AI integrations, or mobile platforms. Feel free to copy my direct contact details or send a message.
+            </p>
+
             <div class="contact__details">
+              <!-- Email -->
               <div class="contact__detail">
-                <div class="contact__detail-icon"><i class='bx bx-envelope'></i></div>
-                <div>
-                  <div class="contact__detail-label">Email</div>
-                  <div class="contact__detail-value">abuakyt@gmail.com</div>
+                <div class="contact__detail-left">
+                  <div class="contact__detail-icon"><i class='bx bx-envelope'></i></div>
+                  <div>
+                    <div class="contact__detail-label">Email</div>
+                    <div class="contact__detail-value">abbubhakarsiddik19@gmail.com</div>
+                  </div>
                 </div>
+                <button class="contact__copy-btn" data-copy="abbubhakarsiddik19@gmail.com" data-label="Email"
+                  title="Copy Email">
+                  <i class='bx bx-copy'></i> Copy
+                </button>
               </div>
+
+              <!-- Phone -->
               <div class="contact__detail">
-                <div class="contact__detail-icon"><i class='bx bxl-linkedin'></i></div>
-                <div>
-                  <div class="contact__detail-label">LinkedIn</div>
-                  <div class="contact__detail-value">Abbu Bhakar Siddik</div>
+                <div class="contact__detail-left">
+                  <div class="contact__detail-icon"><i class='bx bx-phone'></i></div>
+                  <div>
+                    <div class="contact__detail-label">Phone</div>
+                    <div class="contact__detail-value">+91 7022615928</div>
+                  </div>
                 </div>
+                <button class="contact__copy-btn" data-copy="+917022615928" data-label="Phone" title="Copy Phone">
+                  <i class='bx bx-copy'></i> Copy
+                </button>
               </div>
+
+              <!-- LinkedIn -->
               <div class="contact__detail">
-                <div class="contact__detail-icon"><i class='bx bxl-github'></i></div>
-                <div>
-                  <div class="contact__detail-label">GitHub</div>
-                  <div class="contact__detail-value">AbbuBhakarSiddik</div>
+                <div class="contact__detail-left">
+                  <div class="contact__detail-icon"><i class='bx bxl-linkedin'></i></div>
+                  <div>
+                    <div class="contact__detail-label">LinkedIn</div>
+                    <div class="contact__detail-value">linkedin.com/in/abbu-bhakar-siddik</div>
+                  </div>
                 </div>
+                <a href="https://www.linkedin.com/in/abbu-bhakar-siddik" target="_blank" rel="noopener noreferrer"
+                  class="contact__copy-btn">
+                  <i class='bx bx-link-external'></i> View
+                </a>
               </div>
+
+              <!-- GitHub -->
               <div class="contact__detail">
-                <div class="contact__detail-icon"><i class='bx bx-map'></i></div>
-                <div>
-                  <div class="contact__detail-label">Location</div>
-                  <div class="contact__detail-value">Karnataka, India</div>
+                <div class="contact__detail-left">
+                  <div class="contact__detail-icon"><i class='bx bxl-github'></i></div>
+                  <div>
+                    <div class="contact__detail-label">GitHub</div>
+                    <div class="contact__detail-value">github.com/AbbuBhakarSiddik</div>
+                  </div>
                 </div>
+                <a href="https://github.com/AbbuBhakarSiddik" target="_blank" rel="noopener noreferrer"
+                  class="contact__copy-btn">
+                  <i class='bx bx-link-external'></i> View
+                </a>
+              </div>
+
+              <!-- Location -->
+              <div class="contact__detail">
+                <div class="contact__detail-left">
+                  <div class="contact__detail-icon"><i class='bx bx-map-pin'></i></div>
+                  <div>
+                    <div class="contact__detail-label">Location</div>
+                    <div class="contact__detail-value">Koratagere, Karnataka, India</div>
+                  </div>
+                </div>
+                <span class="contact__copy-btn" style="cursor:default;"><i class='bx bx-check'></i> Open</span>
               </div>
             </div>
           </div>
+
+          <!-- Quick Email Message Card -->
           <div class="contact__card">
             <div class="contact__card-icon"><i class='bx bx-send'></i></div>
-            <h3>Send me a message</h3>
-            <p>I'm open to internship opportunities, collaborations, and exciting development projects. Let's build
-              something great together.</p>
-            <span class="contact__email">📧 abuakyt@gmail.com</span>
-            <a href="mailto:abuakyt@gmail.com" class="button" style="width:100%;justify-content:center;">Send Email <i
-                class='bx bx-right-arrow-alt'></i></a>
+            <h3>Drop a Direct Message</h3>
+            <p>
+              Whether you have an internship opportunity, a freelance project, or want to discuss full-stack &amp; AI
+              architectures, my inbox is always open.
+            </p>
+            <span class="contact__email">📧 abbubhakarsiddik19@gmail.com</span>
+            <a href="mailto:abbubhakarsiddik19@gmail.com?subject=Opportunity%20/%20Collaboration%20Inquiry"
+              class="button" style="width:100%;justify-content:center;">
+              <i class='bx bx-mail-send'></i> Send Email Directly
+            </a>
           </div>
         </div>
       </div>
@@ -454,56 +1209,35 @@
     <div class="footer__container">
       <div>
         <h2 class="footer__title">Abbu Bhakar Siddik</h2>
-        <p class="footer__subtitle">Full Stack Developer · MERN · AI Integration</p>
+        <p class="footer__subtitle">Full Stack AI Developer · MERN · Next.js · React Native</p>
       </div>
+
       <div class="footer__social">
-        <a href="https://www.linkedin.com/in/abbu-bhakar-siddik-42466a3a7/" target="_blank"><i
-            class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/AbbuBhakarSiddik?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="mailto:abuakyt@gmail.com"><i class='bx bx-envelope'></i></a>
+        <a href="https://www.linkedin.com/in/abbu-bhakar-siddik" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://github.com/AbbuBhakarSiddik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="mailto:abbubhakarsiddik19@gmail.com" aria-label="Email">
+          <i class='bx bx-envelope'></i>
+        </a>
+        <a href="tel:+917022615928" aria-label="Phone">
+          <i class='bx bx-phone'></i>
+        </a>
       </div>
     </div>
-    <p class="footer__copy">© 2026 Abbu Bhakar Siddik. All rights reserved.</p>
+    <p class="footer__copy">© 2026 Abbu Bhakar Siddik. All rights reserved. Built with precision and passion.</p>
   </footer>
 
+  <!-- FLOATING UI ELEMENTS -->
+  <div class="clipboard-toast" id="clipboard-toast">✓ Copied to clipboard!</div>
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to Top"><i class='bx bx-chevron-up'></i></a>
+
+  <!-- SCRIPTS -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const menu = document.getElementById('nav-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('click', () => menu.classList.toggle('show'));
-    }
-    document.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => menu.classList.remove('show'));
-    });
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
-        const sectionHeight = section.offsetHeight;
-        const id = section.getAttribute('id');
-        const link = document.querySelector('.nav__link[href="#' + id + '"]');
-        if (link) {
-          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            link.classList.add('active-link');
-          } else {
-            link.classList.remove('active-link');
-          }
-        }
-      });
-    });
-    const sr = ScrollReveal({ origin: 'bottom', distance: '36px', duration: 680, delay: 100, easing: 'cubic-bezier(.4,0,.2,1)', reset: false });
-    sr.reveal('.home__data', { origin: 'left' });
-    sr.reveal('.home__visual', { origin: 'right', delay: 200 });
-    sr.reveal('.about__img-wrap', { origin: 'left' });
-    sr.reveal('.about__tag, .about__title, .about__text, .about__highlights', { origin: 'right', interval: 100 });
-    sr.reveal('.skill__card', { interval: 80 });
-    sr.reveal('.project__card', { interval: 110 });
-    sr.reveal('.experience__card', { interval: 80 });
-    sr.reveal('.education__card', { interval: 120 });
-    sr.reveal('.contact__container > *', { interval: 150 });
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
